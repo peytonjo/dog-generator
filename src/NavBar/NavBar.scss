@@ -1,0 +1,36 @@
+@import '../colors.scss';
+
+.nav-bar {
+  background-color: $darkBlue;
+  margin: 0px;
+  height: 13vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+ .title-tag {
+   color: $lightWhite;
+ }
+
+.btn {
+  background-color: $lightWhite;
+  height: 50px;
+  width: 100px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: $lightBlue;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.title-tag h1 {
+  font-size: xx-large;
+  margin: 0px;
+}
