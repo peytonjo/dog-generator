@@ -8,9 +8,14 @@ const NavBar = () => {
         <h1>Dog Lovers</h1>
         <h2>Become a dog person today!</h2>
       </div>
-      <NavLink to="/favorites">
-        <button className="fav-btn btn" role="button">view favorites</button>
-      </NavLink>
+      <div className>
+        <NavLink to="/user-favorites">
+          <button className="favorites-btn btn">view favorites</button>
+        </NavLink>
+        <NavLink to="/">
+          <button className="btn">home</button>
+        </NavLink>
+      </div>
     </nav>
   )
 }
