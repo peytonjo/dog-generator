@@ -8,7 +8,7 @@ const NavBar = () => {
         <h1>Dog Lovers</h1>
         <h2>Become a dog person today!</h2>
       </div>
-      <div className>
+      <div className="nav-btns">
         <NavLink to="/user-favorites">
           <button className="favorites-btn btn">view favorites</button>
         </NavLink>
