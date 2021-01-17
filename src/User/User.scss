@@ -1,0 +1,10 @@
+.fav-dogs img {
+  max-height: 300px;
+  max-width: 350px;
+  margin: 15px;
+}
+
+.fav-dogs {
+  display: flex;
+  flex-flow: wrap;
+}
