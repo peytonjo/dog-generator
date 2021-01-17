@@ -8,6 +8,7 @@ import User from '../User/User'
 import Form from '../Form/Form'
 import { getRandomDog } from '../ApiCalls';
 import grassImg from '../grass.png';
+import { getFavoriteDogs } from '../localStorage';
 
 
 class App extends Component {
@@ -16,7 +17,8 @@ class App extends Component {
     this.state = {
       image: '',
       status: '',
-      displayed: false
+      displayed: false,
+      favoriteDogs: []
     }
   }
 
@@ -26,6 +28,14 @@ class App extends Component {
 
   componentDidMount() {
     this.loadDogImg()
+    const favoriteDogs = getFavoriteDogs()
+    if (favoriteDogs) {
+      this.setState({favoriteDogs: favoriteDogs})
+    }
+  }
+
+  setFavoriteDogs = (favoriteDogs) => {
+    this.setState({favoriteDogs: favoriteDogs})
   }
 
   loadDogImg = () => {
@@ -56,7 +66,12 @@ class App extends Component {
              path='/'
              render={() => {
                return (
-                <RandomDog image={this.state.image} loadDogImg={this.loadDogImg} congratsAlert={this.congratsAlert}/>
+                <RandomDog 
+                  image={this.state.image} 
+                  loadDogImg={this.loadDogImg} 
+                  congratsAlert={this.congratsAlert}
+                  setFavoriteDogs={this.setFavoriteDogs}
+                />
                )
              }}>
             </Route>
@@ -65,7 +80,7 @@ class App extends Component {
               path="/user-favorites" 
               render={() => {
                 return (
-                  <User />
+                  <User favoriteDogs={this.state.favoriteDogs}/>
                 )
               }}>
             </Route>  
