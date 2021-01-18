@@ -1,29 +1,42 @@
 import React, { Component } from 'react'
-// import { getRandomDog } from '../ApiCalls';
 import heartIcon from '../heart.png'
 import { NavLink } from 'react-router-dom'
-import './RandomDog.scss'
 import { getFavoriteDogs } from '../localStorage';
+import './RandomDog.scss'
 
 //this component will display a random image on the screen 
-//hold functionality to add image to loacl storage 
+//hold functionality to add image to local storage 
+//-------
+//function should create a favDog object 
+//see if favoritedDogs is an empty array
+//if not push new favorited dog into the array 
+//else make it an array with the favdog
+//-------
+//check get local storage for if the array includes the image 
+//if not push into the array
 
 class RandomDog extends Component {
   constructor(props) {
     super(props);
   }
 
-
   addFavDog = (e) => {
     const favDog = {
       id: Date.now(),
       image: this.props.image,
     }
-    let favoritedDogs = getFavoriteDogs()
-    console.log('favoritedDogs', favoritedDogs)
-    favoritedDogs ? favoritedDogs.push(favDog) : favoritedDogs = [favDog]
+    const favoritedDogs = getFavoriteDogs() ? getFavoriteDogs() : []
+    const foundDog = favoritedDogs.find(dog => dog.image === favDog.image)
+
+
+    if(!foundDog) {
+      favoritedDogs.push(favDog)
+    } else {
+      window.alert("You already liked this photo!")
+    }
 
     localStorage.setItem('favoriteDogs', JSON.stringify(favoritedDogs))
+
     this.props.setFavoriteDogs(favoritedDogs)
   }
 
