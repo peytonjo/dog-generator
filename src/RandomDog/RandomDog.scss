@@ -1,0 +1,62 @@
+@import '../colors.scss';
+
+.home-view {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 2%;
+}
+
+.home-view h3 {
+  color: $darkBlue;
+}
+
+.dog-img {
+  margin-top: 30px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.page-btns {
+  background-color: $lightWhite;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.answr-btn {
+  margin: 5px;
+}
+
+.page-btns:hover {
+  background: $lightBlue;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.next-btn {
+  margin: 10px
+}
+
+.home-view div {
+  text-align: -webkit-center;
+}
+
+.fav-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.fav-btn {
+  background-color: $pink;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.fav-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

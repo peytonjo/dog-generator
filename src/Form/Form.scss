@@ -1,0 +1,48 @@
+@import '../colors.scss';
+
+form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: -webkit-center;
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 292px;
+  padding: 5px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.form h1 {
+  color: $darkBlue;
+}
+
+.form h2 {
+  color: $darkBlue;
+}
+
+.submit-btn {
+  margin: 10px;
+  background-color: #84a9ac;
+  height: 50px;
+  width: 304px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: $darkBlue;
+  color: $white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.confetti-icon {
+  height: 100px;
+  width: 100px;
+}
