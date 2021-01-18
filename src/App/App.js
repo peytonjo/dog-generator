@@ -17,8 +17,9 @@ class App extends Component {
     this.state = {
       image: '',
       status: '',
-      displayed: false,
-      favoriteDogs: []
+      userName: '',
+      favoriteDogs: [],
+      displayed: false
     }
   }
 
@@ -36,6 +37,10 @@ class App extends Component {
 
   setFavoriteDogs = (favoriteDogs) => {
     this.setState({favoriteDogs: favoriteDogs})
+  }
+
+  setName = (userName) => {
+    this.setState({userName: userName})
   }
 
   loadDogImg = () => {
@@ -80,7 +85,7 @@ class App extends Component {
               path="/user-favorites" 
               render={() => {
                 return (
-                  <User favoriteDogs={this.state.favoriteDogs}/>
+                  <User favoriteDogs={this.state.favoriteDogs} userName={this.state.userName}/>
                 )
               }}>
             </Route>  
@@ -89,7 +94,7 @@ class App extends Component {
               path="/form-view" 
               render={() => {
                 return (
-                  <Form />
+                  <Form setName={this.setName} userName={this.state.userName} favoriteDogs={this.state.favoriteDogs}/>
                 )
               }}>
             </Route>       
