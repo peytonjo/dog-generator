@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Final Solo Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Description
+The complete project spec and rubric can be found [here]().
 
-In the project directory, you can run:
+## Setup Instructions
+  1. `Fork` [this repository](https://github.com/peytonjo/dog-generator).
+  1. `Clone` it down to your local machine with `git clone <your SSH Key>`.
+  1. Change into your directory with 
+  1. Run `npm install` to compile the React application.
+  1. Run `npm install cypress --save-dev` to install Cypress.
+  1. Run `npm start` to see the app running locally.
+  1. Run `<your text editor> .` to see the code in your text editor.
+  1. Run `npm test` to see all of the tests running in your Terminal.
+  1. Run `npx cypress open` to run all Cypress test.
 
-### `npm start`
+## User Experience
+ * 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The Working Application
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Learning Goals
+* Firm understanding of how to use Cypress 
+* Become more comfortable with 'best use practices'
+* Gain a deeper understanding of React and React Router 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Application
+Should:
+* Have a home page that displays a random dog image
+* Have a nav bar with buttons to see the favorited dog images and to return home
+* Form page should have a working form that takes in the user name and displays a unique greeting on user page
+* User page should display all user favorited dog images along with a unique greeting
+  
+## Programming Languages and Technology Used
+* `React Library` 
+* `React testing Library`, `Jest`, and `Cypress`
+* `SCSS`
+* `NPM` to compile the application and run tests
 
-### `npm run build`
+## Contributors
+### Creators/Owners
+* [Peyton Jones](https://github.com/peytonjo)
+### Project Managers
+* [Leta Keane](https://github.com/letakeane)
+* [Will Mitchell](https://github.com/wvmitchell)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
