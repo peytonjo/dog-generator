@@ -4,6 +4,7 @@ form {
   display: flex;
   flex-direction: column;
   place-items: center;
+  text-align: -webkit-center;
 }
 
 input {
@@ -17,6 +18,10 @@ input {
 }
 
 .form h1 {
+  color: $darkBlue;
+}
+
+.form h2 {
   color: $darkBlue;
 }
 
@@ -37,8 +42,7 @@ input {
   transform: scale(1.1);
 }
 
-
-
-// .form h2 {
-
-// }
+.confetti-icon {
+  height: 100px;
+  width: 100px;
+}
