@@ -12,7 +12,6 @@ import confettiImg from '../confetti.png'
 //else render default message
 
 const Form = (props) => {
-
   return (
     <form className="form">
       <h1>Congrats on leaving the dark side and becoming a dog person!!!!!</h1>
