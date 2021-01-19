@@ -45,6 +45,9 @@ Should:
 * Have a nav bar with buttons to see the favorited dog images and to return home
 * Form page should have a working form that takes in the user name and displays a unique greeting on user page
 * User page should display all user favorited dog images along with a unique greeting
+
+![Jan-18-2021 20-12-37](https://user-images.githubusercontent.com/59493784/104983225-964f2580-59c9-11eb-896d-a5de521c16d1.gif)
+![Jan-18-2021 20-14-19](https://user-images.githubusercontent.com/59493784/104983314-c8608780-59c9-11eb-87ba-bcbc1e0ecc08.gif)
   
 ## Programming Languages and Technology Used
 * `React Library` 
