@@ -7,7 +7,7 @@ import RandomDog from '../RandomDog/RandomDog';
 import User from '../User/User'
 import Form from '../Form/Form'
 import { getRandomDog } from '../ApiCalls';
-import grassImg from '../grass.png';
+import grassImg from '../icons/grass.png';
 import { getFavoriteDogs } from '../localStorage';
 
 
@@ -19,28 +19,23 @@ class App extends Component {
       status: '',
       userName: '',
       favoriteDogs: [],
-      displayed: false
     }
-  }
-
-  displayedHomeBtn = (boolean) => {
-    this.setState({ displayed: boolean })
   }
 
   componentDidMount() {
     this.loadDogImg()
     const favoriteDogs = getFavoriteDogs()
     if (favoriteDogs) {
-      this.setState({favoriteDogs: favoriteDogs})
+      this.setState({ favoriteDogs: favoriteDogs })
     }
   }
 
   setFavoriteDogs = (favoriteDogs) => {
-    this.setState({favoriteDogs: favoriteDogs})
+    this.setState({ favoriteDogs: favoriteDogs })
   }
 
   setName = (userName) => {
-    this.setState({userName: userName})
+    this.setState({ userName: userName })
   }
 
   loadDogImg = () => {
@@ -66,42 +61,42 @@ class App extends Component {
           </nav>
           <Switch>
             <Route
-             exact
-             path='/'
-             render={() => {
-               return (
-                <RandomDog 
-                  image={this.state.image} 
-                  loadDogImg={this.loadDogImg} 
-                  congratsAlert={this.congratsAlert}
-                  ashamedAlert={this.ashamedAlert}
-                  setFavoriteDogs={this.setFavoriteDogs}
-                />
-               )
-             }}>
+              exact
+              path='/'
+              render={() => {
+                return (
+                  <RandomDog
+                    image={this.state.image}
+                    loadDogImg={this.loadDogImg}
+                    congratsAlert={this.congratsAlert}
+                    ashamedAlert={this.ashamedAlert}
+                    setFavoriteDogs={this.setFavoriteDogs}
+                  />
+                )
+              }}>
             </Route>
-            <Route 
+            <Route
               exact
-              path="/user-favorites" 
+              path="/user-favorites"
               render={() => {
                 return (
-                  <User favoriteDogs={this.state.favoriteDogs} userName={this.state.userName}/>
+                  <User favoriteDogs={this.state.favoriteDogs} userName={this.state.userName} />
                 )
               }}>
-            </Route>  
-            <Route 
+            </Route>
+            <Route
               exact
-              path="/form-view" 
+              path="/form-view"
               render={() => {
                 return (
-                  <Form setName={this.setName} userName={this.state.userName} favoriteDogs={this.state.favoriteDogs}/>
+                  <Form setName={this.setName} userName={this.state.userName} favoriteDogs={this.state.favoriteDogs} />
                 )
               }}>
-            </Route>       
-          </Switch>         
-          <img 
+            </Route>
+          </Switch>
+          <img
             className="grass-img"
-            src={grassImg}/>
+            src={grassImg} />
         </main>
       </div>
     )

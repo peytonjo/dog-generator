@@ -30,10 +30,15 @@
   margin: 5px;
 }
 
-.page-btns:hover {
-  background: $lightBlue;
+@mixin btn-hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.page-btns:hover {
+  @include btn-hover;
+  background: $lightBlue;
+  
 }
 
 .next-btn {
@@ -57,6 +62,5 @@
 }
 
 .fav-btn:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+  @include btn-hover;
 }

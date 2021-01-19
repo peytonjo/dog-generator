@@ -4,4 +4,4 @@ const getRandomDog = () => {
     .then(data => data)
 }
 
-  export { getRandomDog }
+export { getRandomDog }

@@ -37,7 +37,7 @@ describe('App', () => {
     cy.get('a > .answr-btn').contains('yes').click()
     cy.get('input').type('Peyton')
     cy.get('.submit-btn').contains('Submit').click()
-    cy.contains('Hello Peyton')
+    cy.contains('Hello Peyton, here are your favorite dogs:')
   })
 
   it('Should display default greeting when no name has been given', () => {
