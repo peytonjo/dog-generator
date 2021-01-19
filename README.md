@@ -39,6 +39,10 @@ User should be able to:
 * Gain a deeper understanding of React and React Router 
 * Understand when to use a Class Component vs a Functional Component
 
+![Jan-18-2021 20-12-37](https://user-images.githubusercontent.com/59493784/104983225-964f2580-59c9-11eb-896d-a5de521c16d1.gif)
+
+![Jan-18-2021 20-16-48](https://user-images.githubusercontent.com/59493784/104983521-25f4d400-59ca-11eb-87e2-c6de3f24819a.gif)
+
 ## Application
 Should:
 * Have a home page that displays a random dog image
@@ -46,7 +50,7 @@ Should:
 * Form page should have a working form that takes in the user name and displays a unique greeting on user page
 * User page should display all user favorited dog images along with a unique greeting
 
-![Jan-18-2021 20-12-37](https://user-images.githubusercontent.com/59493784/104983225-964f2580-59c9-11eb-896d-a5de521c16d1.gif)
+
 ![Jan-18-2021 20-14-19](https://user-images.githubusercontent.com/59493784/104983314-c8608780-59c9-11eb-87ba-bcbc1e0ecc08.gif)
   
 ## Programming Languages and Technology Used
