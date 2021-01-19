@@ -8,13 +8,13 @@ form {
 }
 
 input {
-  border: 1px solid grey;
+  border: 1px solid $grey;
   border-radius: 5px;
   height: 25px;
   width: 292px;
   padding: 5px;
   outline: 0;
-  background-color: #f5f5f5;
+  background-color: $lightWhite;
 }
 
 .form h1 {
@@ -27,7 +27,7 @@ input {
 
 .submit-btn {
   margin: 10px;
-  background-color: #84a9ac;
+  background-color: $lightBlue;
   height: 50px;
   width: 304px;
   border: none;
