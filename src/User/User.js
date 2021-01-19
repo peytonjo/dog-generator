@@ -21,7 +21,7 @@ const User = (props) => {
 
   if (props.favoriteDogs.length) {
     photos = props.favoriteDogs.map(dogData => (
-      <img key={dogData.id} src={dogData.image} />
+      <img key={dogData.id} src={dogData.image} alt="dog photo" />
     ));
   }
 
