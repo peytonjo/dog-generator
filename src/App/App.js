@@ -57,7 +57,6 @@ class App extends Component {
     window.alert('BOOOOOOOO....try again')
   }
 
-
   render() {
     return (
       <div className="app">
@@ -75,6 +74,7 @@ class App extends Component {
                   image={this.state.image} 
                   loadDogImg={this.loadDogImg} 
                   congratsAlert={this.congratsAlert}
+                  ashamedAlert={this.ashamedAlert}
                   setFavoriteDogs={this.setFavoriteDogs}
                 />
                )

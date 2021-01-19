@@ -14,13 +14,14 @@ import './RandomDog.scss'
 //-------
 //check get local storage for if the array includes the image 
 //if not push into the array
+//
 
 class RandomDog extends Component {
   constructor(props) {
     super(props);
   }
 
-  addFavDog = (e) => {
+  addFavDog = () => {
     const favDog = {
       id: Date.now(),
       image: this.props.image,
@@ -59,7 +60,7 @@ class RandomDog extends Component {
           <NavLink to="/form-view">
             <button className="answr-btn page-btns" onClick={this.props.congratsAlert}>yes</button>
           </NavLink>
-          <button className="answr-btn page-btns">no</button>
+          <button className="answr-btn page-btns" onClick={this.props.ashamedAlert}>no</button>
         </div>
       </section>
     )
