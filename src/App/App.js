@@ -96,7 +96,8 @@ class App extends Component {
           </Switch>
           <img
             className="grass-img"
-            src={grassImg} />
+            src={grassImg}
+            alt="grass photo" />
         </main>
       </div>
     )
