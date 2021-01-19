@@ -1,8 +1,10 @@
-# Final Solo Project
-
+# Binary Challenge Solo Project
+The primary goal of this solo project is to gain a deeper understanding of Cypress testing and the usage of Class/Functional Components.
+This Application was created to solve the problem of "Turning Cat people into Dog people", I chose this problem as a way to create something 
+fun and light hearted while still solving an issue. The project was built using React, React Router and Cypress to gain a deeper understanding of the ins and outs of creating a react app that is fully tested (happy/sad path) with Cypress.
 
 ## Project Description
-The complete project spec and rubric can be found [here]().
+The complete project spec and rubric can be found [here](https://frontend.turing.io/projects/module-3/binary-challenge.html).
 
 ## Setup Instructions
   1. `Fork` [this repository](https://github.com/peytonjo/dog-generator).
@@ -16,15 +18,26 @@ The complete project spec and rubric can be found [here]().
   1. Run `npx cypress open` to run all Cypress test.
 
 ## User Experience
- * 
+User should be able to: 
+- view random dog images
+- like images and add them to their personal favorites page
+- become a dog person and enter their name in the input field
+- be welcomed with a unique greeting 
+ 
 
 ## The Working Application
+- Should display a random image 
+- Allow images to be added to local storage 
+- Display images in local storages on users 'favorites page'
+- Allow user to become a dog person 
+- Have the user input their name in a controlled form
+- Have the users name displayed on the users favorites page
 
 
 ## Learning Goals
 * Firm understanding of how to use Cypress 
-* Become more comfortable with 'best use practices'
 * Gain a deeper understanding of React and React Router 
+* Understand when to use a Class Component vs a Functional Component
 
 ## Application
 Should:
@@ -36,12 +49,14 @@ Should:
 ## Programming Languages and Technology Used
 * `React Library` 
 * `React testing Library`, `Jest`, and `Cypress`
+* `Router`
 * `SCSS`
 * `NPM` to compile the application and run tests
 
 ## Contributors
 ### Creators/Owners
 * [Peyton Jones](https://github.com/peytonjo)
+
 ### Project Managers
 * [Leta Keane](https://github.com/letakeane)
 * [Will Mitchell](https://github.com/wvmitchell)
